@@ -1,0 +1,35 @@
+.start-button {
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  line-height: 50px;
+  font-family: Roboto;
+  font-size: 30px;
+  color: rgb(252, 252, 252);
+  background-color: #fc6262;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .start-button {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+}
+.start-button:hover {
+  background-color: #6abb51;
+}
+.repeat-button:hover {
+  background-color: #6abb51;
+}
+.headen {
+  height: 0;
+  font-size: 0;
+}
+.repeat {
+  width: 140px;
+  background-color: #ffb108;
+}

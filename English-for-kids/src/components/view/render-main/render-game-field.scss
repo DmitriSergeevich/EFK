@@ -1,0 +1,21 @@
+.card-field {
+  margin: 0 auto;
+  padding-top: 2%;
+  width: 1350px;
+  min-height: 650px;
+}
+@media (max-width: 1439px) {
+  .card-field {
+    width: 1200px;
+  }
+}
+@media (max-width: 1220px) {
+  .card-field {
+    width: 640px;
+  }
+}
+@media (max-width: 640px) {
+  .card-field {
+    width: 320px;
+  }
+}

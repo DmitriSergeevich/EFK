@@ -1,0 +1,59 @@
+.progress-field {
+  margin: 20px auto 0 auto;
+  width: 1350px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.progress-field-star {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+@media (max-width: 1439px) {
+  .progress-field {
+    width: 1200px;
+    height: 40px;
+  }
+  .progress-field-star {
+    width: 40px;
+    height: 40px;
+    margin-left: 7px;
+  }
+}
+@media (max-width: 1220px) {
+  .progress-field {
+    width: 640px;
+    height: 30px;
+  }
+  .progress-field-star {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 640px) {
+  .progress-field {
+    width: 320px;
+    height: 20px;
+  }
+  .progress-field-star {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+  }
+}
+.progress-field-star__golden {
+  background: url("https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/rslang/english-for.kids.data/img/star-win.svg");
+  background-size: contain;
+  background-position: center;
+}
+.progress-field-star__empty {
+  background: url("https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/rslang/english-for.kids.data/img/star.svg");
+  background-size: contain;
+  background-position: center;
+}

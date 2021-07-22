@@ -1,0 +1,73 @@
+.endGameWindow {
+  padding-top: 50px;
+  position: absolute;
+  width: 1360px;
+  height: 100vh;
+  left: calc((100% - 1360px) / 2);
+  top: 0;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.808);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 100px;
+}
+.endGameWindow-img {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto 0 auto;
+}
+.endGameWindow-img__lose {
+  background: url('/src/assets/images/sad.svg');
+  background-position: center;
+  background-size: auto;
+}
+.endGameWindow-img__win {
+  background: url('/src/assets/images/happy.svg');
+  background-position: center;
+  background-size: auto;
+}
+.errors-number {
+  color: red;
+}
+@media (max-width: 1439px) {
+  .endGameWindow {
+    padding-top: 40px;
+    width: 1220px;
+    height: 100%;
+    left: calc((100% - 1220px) / 2);
+    font-size: 90px;
+  }
+  .endGameWindow-img {
+    width: 400px;
+    height: 400px;
+    margin: 80px auto 0 auto;
+  }
+}
+@media (max-width: 1220px) {
+  .endGameWindow {
+    padding-top: 30px;
+    width: 640px;
+    left: calc((100% - 640px) / 2);
+    font-size: 80px;
+  }
+  .endGameWindow-img {
+    width: 280px;
+    height: 280px;
+    margin: 50px auto 0 auto;
+  }
+}
+@media (max-width: 640px) {
+  .endGameWindow {
+    padding-top: 20px;
+    width: 320px;
+    left: calc((100% - 320px) / 2);
+    font-size: 30px;
+  }
+  .endGameWindow-img {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 0 auto;
+  }
+}
