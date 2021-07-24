@@ -4,9 +4,10 @@ import createElement from '../create-element';
 
 import './render-categories-card.scss';
 
-export default function renderCategoryCard(categoryName: string, categoryImg:string): HTMLElement {
+export default function renderCategoryCard(categoryName: string, categoryImg: string): HTMLElement {
   const categoryCard = createElement('div', ['category-card']);
-  const imgURL = `https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/rslang/english-for.kids.data/img/${categoryImg}.jpg`;
+  const imgURL = 'https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/rslang/'
+    + `english-for.kids.data/img/${categoryImg}.jpg`;
 
   categoryCard.innerHTML = `
     <div class="category-preview">
@@ -23,7 +24,6 @@ export default function renderCategoryCard(categoryName: string, categoryImg:str
   }
   categoryCard.addEventListener('click', () => {
     main.innerHTML = '';
-    // @ts-ignore
     window.location.hash = LOCATION_HASH[categoryName];
   });
   return categoryCard;

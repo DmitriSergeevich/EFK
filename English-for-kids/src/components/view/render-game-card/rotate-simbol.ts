@@ -1,9 +1,8 @@
 import { simbol } from '../../constants/constants';
 import { rotateCard } from '../../models/models';
-import createElement from '../create-element';
+// import createElement from '../create-element';
 
 export default function rotateSimbol(root: HTMLElement): HTMLElement {
-
   simbol.innerHTML = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
       <defs>
@@ -25,7 +24,8 @@ export default function rotateSimbol(root: HTMLElement): HTMLElement {
       -.38-.543-1-.87-1.874-.979-.815 0-1.494.244-2.037.733l-11.162 11.244c-.434.436-.665.991-.692 1.67
       -.027.68.15 1.29.53 1.833 5.921 7.17 13.09 12.724 21.509 16.661 8.419 3.937 17.3 5.907 26.642 5.907 8.473 0 16.566
       -1.657 24.279-4.97 7.713-3.313 14.365-7.768 19.961-13.361 5.594-5.596 10.05-12.248 13.361-19.961 3.313-7.713 4.969
-      -15.807 4.969-24.279 0-8.474-1.657-16.564-4.97-24.277" transform="matrix(-.12786 0 0 .12786 19.05 2.948)" fill="#4d4d4d"/>
+      -15.807 4.969-24.279 0-8.474-1.657-16.564-4.97-24.277" `
+    + `transform="matrix(-.12786 0 0 .12786 19.05 2.948)" fill="#4d4d4d"/>
       </svg>
   `;
   simbol.addEventListener('click', () => {
