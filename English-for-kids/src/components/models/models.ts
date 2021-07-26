@@ -86,7 +86,6 @@ let shafledArr: Array<string>;
 let errorCount = 0;
 
 function shuffleArray(): void {
-  // @ts-ignore
   const array = cardCategories[curCategory];
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -183,7 +182,6 @@ function cardsDontMatch(): void {
 
 export function checkWord(word: string, el: HTMLElement): void {
   if (gameStatus) {
-    // @ts-ignore
     if (word === cardCategories[curCategory][currWord]) {
       el.classList.add('card-container__disabled');
       cardsMatched();

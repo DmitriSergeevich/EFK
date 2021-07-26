@@ -10,7 +10,8 @@ export default function renderGameCard(engWord: string, rusWord: string): HTMLEl
   const cardFront = createElement('div', ['card__front']);
   const cardBack = createElement('div', ['card__back']);
   const cardItems = createElement('div', ['card-items']);
-  const imgURL = `https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/rslang/english-for.kids.data/img/${engWord}.jpg`;
+  const imgURL = 'https://raw.githubusercontent.com/rolling-scopes-school/tasks/master'
+    + `/tasks/rslang/english-for.kids.data/img/${engWord}.jpg`;
   cardItems.innerHTML = `
     <div class="card-name">${engWord}</div>
   `;

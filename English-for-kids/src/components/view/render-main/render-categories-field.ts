@@ -8,7 +8,6 @@ export default function renderCategoriesField(root: HTMLElement): void {
   const categoriesField = createElement('div', ['categories']);
   const categoriesContainer = createElement('div', ['container']);
   categoriesKeys.forEach((cat) => {
-    // @ts-ignore
     const categoryImage = cardCategories[cat][0];
     categoriesContainer.append(renderCategoryCard(cat, categoryImage));
   });

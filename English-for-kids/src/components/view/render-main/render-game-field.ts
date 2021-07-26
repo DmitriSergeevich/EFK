@@ -14,9 +14,7 @@ export default function renderGameField(categoryName: string, root?: HTMLElement
   curCategoryHandler(categoryName);
   const gameField = createElement('div', ['card-field']);
   const gameContainer = createElement('div', ['container']);
-  // @ts-ignore
   const catArrEng = cardCategories[categoryName];
-  // @ts-ignore
   const catArrRus = cardCategoriesRus[categoryName];
 
   for (let i = 0; i < catArrEng.length; i++) {
